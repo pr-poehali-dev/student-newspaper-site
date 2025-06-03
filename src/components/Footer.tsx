@@ -1,11 +1,4 @@
-import {
-  Mail,
-  Phone,
-  MapPin,
-  Facebook,
-  Instagram,
-  Telegram,
-} from "lucide-react";
+import { Mail, Phone, MapPin, Facebook, Instagram, Send } from "lucide-react";
 
 const Footer = () => {
   return (
@@ -24,7 +17,7 @@ const Footer = () => {
             <div className="flex space-x-4">
               <Facebook className="h-5 w-5 text-gray-300 hover:text-white cursor-pointer transition-colors" />
               <Instagram className="h-5 w-5 text-gray-300 hover:text-white cursor-pointer transition-colors" />
-              <Telegram className="h-5 w-5 text-gray-300 hover:text-white cursor-pointer transition-colors" />
+              <Send className="h-5 w-5 text-gray-300 hover:text-white cursor-pointer transition-colors" />
             </div>
           </div>
 
