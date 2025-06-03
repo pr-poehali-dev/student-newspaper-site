@@ -72,15 +72,15 @@
   .star-decoration::before {
     content: "✦";
     position: absolute;
-    color: #000000;
-    font-size: 24px;
-    opacity: 0.3;
+    color: #ffffff;
+    font-size: 32px;
+    opacity: 0.6;
     pointer-events: none;
   }
 
   .dark .star-decoration::before {
     color: #ffffff;
-    opacity: 0.4;
+    opacity: 0.8;
   }
 
   .star-top-left::before {
@@ -104,15 +104,15 @@
   }
 
   .star-large::before {
-    font-size: 32px;
+    font-size: 48px;
   }
 
   .star-medium::before {
-    font-size: 28px;
+    font-size: 40px;
   }
 
   .star-small::before {
-    font-size: 20px;
+    font-size: 32px;
   }
 }
 
