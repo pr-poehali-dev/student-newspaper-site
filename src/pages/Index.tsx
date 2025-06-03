@@ -2,6 +2,7 @@ import Header from "@/components/Header";
 import Hero from "@/components/Hero";
 import NewsGrid from "@/components/NewsGrid";
 import Sidebar from "@/components/Sidebar";
+import Team from "@/components/Team";
 import Footer from "@/components/Footer";
 
 const Index = () => {
@@ -17,6 +18,7 @@ const Index = () => {
           <Sidebar />
         </div>
       </div>
+      <Team />
       <Footer />
     </div>
   );
