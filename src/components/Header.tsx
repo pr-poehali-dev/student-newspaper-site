@@ -31,20 +31,20 @@ const Header = () => {
       {/* Main header */}
       <div className="container mx-auto px-4 py-6 relative">
         <div className="text-center relative star-decoration star-top-left star-large">
-          <div className="flex items-center justify-center gap-6 md:gap-8">
+          <div className="flex items-center justify-center gap-2 md:gap-8">
             {/* Left logo */}
             <img
               src="https://cdn.poehali.dev/files/eb86911c-4399-4bea-a146-7e2d107b4694.svg"
               alt="Логотип Студенческий Меридиан"
-              className="w-40 h-40 md:w-48 md:h-48 opacity-90 filter brightness-0 invert"
+              className="w-16 h-16 md:w-48 md:h-48 opacity-90 filter brightness-0 invert"
             />
 
             {/* Title */}
-            <div>
-              <h1 className="font-merriweather font-black text-5xl md:text-6xl text-newspaper-dark-text tracking-tight relative stripe-decoration stripe-left">
+            <div className="text-center">
+              <h1 className="font-merriweather font-black text-2xl md:text-6xl text-newspaper-dark-text tracking-tight relative stripe-decoration stripe-left">
                 СТУДЕНЧЕСКИЙ
               </h1>
-              <h2 className="font-merriweather font-black text-4xl md:text-5xl text-newspaper-dark-text mt-1 relative stripe-decoration stripe-right">
+              <h2 className="font-merriweather font-black text-xl md:text-5xl text-newspaper-dark-text mt-1 relative stripe-decoration stripe-right">
                 МЕРИДИАН
               </h2>
             </div>
@@ -53,11 +53,11 @@ const Header = () => {
             <img
               src="https://cdn.poehali.dev/files/eb86911c-4399-4bea-a146-7e2d107b4694.svg"
               alt="Логотип Студенческий Меридиан"
-              className="w-40 h-40 md:w-48 md:h-48 opacity-90 filter brightness-0 invert"
+              className="w-16 h-16 md:w-48 md:h-48 opacity-90 filter brightness-0 invert"
             />
           </div>
 
-          <p className="font-open-sans text-newspaper-dark-text-muted mt-2 text-sm uppercase tracking-wider">
+          <p className="font-open-sans text-newspaper-dark-text-muted mt-2 text-xs md:text-sm uppercase tracking-wider">
             Голос студенческого сообщества
           </p>
         </div>
