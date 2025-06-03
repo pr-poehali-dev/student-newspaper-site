@@ -2,7 +2,7 @@ import { Search, Menu } from "lucide-react";
 
 const Header = () => {
   return (
-    <header className="bg-newspaper-dark-bg dark-newspaper border-b-2 border-newspaper-dark-border dark-newspaper-border relative">
+    <header className="bg-newspaper-dark-bg dark-newspaper border-b-2 border-newspaper-dark-border dark-newspaper-border relative diagonal-lines">
       {/* Decorative stars */}
       <div className="absolute top-2 left-4 star-decoration star-top-left star-medium"></div>
       <div className="absolute top-2 right-4 star-decoration star-top-right star-medium"></div>
@@ -36,7 +36,7 @@ const Header = () => {
             <img
               src="https://cdn.poehali.dev/files/eb86911c-4399-4bea-a146-7e2d107b4694.svg"
               alt="Логотип Студенческий Меридиан"
-              className="w-20 h-20 md:w-24 md:h-24 opacity-90 filter brightness-0 invert"
+              className="w-40 h-40 md:w-48 md:h-48 opacity-90 filter brightness-0 invert"
             />
 
             {/* Title */}
@@ -53,7 +53,7 @@ const Header = () => {
             <img
               src="https://cdn.poehali.dev/files/eb86911c-4399-4bea-a146-7e2d107b4694.svg"
               alt="Логотип Студенческий Меридиан"
-              className="w-20 h-20 md:w-24 md:h-24 opacity-90 filter brightness-0 invert"
+              className="w-40 h-40 md:w-48 md:h-48 opacity-90 filter brightness-0 invert"
             />
           </div>
 

@@ -157,6 +157,55 @@
   }
 }
 
+/* Diagonal decorative lines */
+@layer utilities {
+  .diagonal-lines {
+    position: relative;
+    overflow: hidden;
+  }
+
+  .diagonal-lines::before,
+  .diagonal-lines::after {
+    content: "";
+    position: absolute;
+    width: 200%;
+    height: 1px;
+    background: linear-gradient(
+      90deg,
+      transparent 0%,
+      #333333 20%,
+      #333333 80%,
+      transparent 100%
+    );
+    opacity: 0.3;
+    z-index: 0;
+  }
+
+  .diagonal-lines::before {
+    top: 20%;
+    left: -50%;
+    transform: rotate(2deg);
+  }
+
+  .diagonal-lines::after {
+    bottom: 20%;
+    left: -50%;
+    transform: rotate(-2deg);
+  }
+
+  .dark .diagonal-lines::before,
+  .dark .diagonal-lines::after {
+    background: linear-gradient(
+      90deg,
+      transparent 0%,
+      #666666 20%,
+      #666666 80%,
+      transparent 100%
+    );
+    opacity: 0.2;
+  }
+}
+
 /* Dark theme newspaper styles */
 .dark-newspaper {
   background-color: #0f0f0f;
