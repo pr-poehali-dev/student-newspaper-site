@@ -31,12 +31,32 @@ const Header = () => {
       {/* Main header */}
       <div className="container mx-auto px-4 py-6 relative">
         <div className="text-center relative star-decoration star-top-left star-large">
-          <h1 className="font-merriweather font-black text-5xl md:text-6xl text-newspaper-dark-text tracking-tight relative stripe-decoration stripe-left">
-            СТУДЕНЧЕСКИЙ
-          </h1>
-          <h2 className="font-merriweather font-black text-4xl md:text-5xl text-newspaper-dark-text mt-1 relative stripe-decoration stripe-right">
-            МЕРИДИАН
-          </h2>
+          <div className="flex items-center justify-center gap-6 md:gap-8">
+            {/* Left logo */}
+            <img
+              src="https://cdn.poehali.dev/files/eb86911c-4399-4bea-a146-7e2d107b4694.svg"
+              alt="Логотип Студенческий Меридиан"
+              className="w-12 h-12 md:w-16 md:h-16 opacity-90 filter brightness-0 invert"
+            />
+
+            {/* Title */}
+            <div>
+              <h1 className="font-merriweather font-black text-5xl md:text-6xl text-newspaper-dark-text tracking-tight relative stripe-decoration stripe-left">
+                СТУДЕНЧЕСКИЙ
+              </h1>
+              <h2 className="font-merriweather font-black text-4xl md:text-5xl text-newspaper-dark-text mt-1 relative stripe-decoration stripe-right">
+                МЕРИДИАН
+              </h2>
+            </div>
+
+            {/* Right logo */}
+            <img
+              src="https://cdn.poehali.dev/files/eb86911c-4399-4bea-a146-7e2d107b4694.svg"
+              alt="Логотип Студенческий Меридиан"
+              className="w-12 h-12 md:w-16 md:h-16 opacity-90 filter brightness-0 invert"
+            />
+          </div>
+
           <p className="font-open-sans text-newspaper-dark-text-muted mt-2 text-sm uppercase tracking-wider">
             Голос студенческого сообщества
           </p>
