@@ -71,18 +71,28 @@ const NewsGrid = () => {
   ];
 
   return (
-    <section className="bg-newspaper-light-gray py-12">
+    <section className="bg-newspaper-dark-surface dark-newspaper-surface py-12 relative">
+      {/* Decorative stars */}
+      <div className="absolute top-6 left-6 star-decoration star-top-left star-large"></div>
+      <div className="absolute top-6 right-6 star-decoration star-top-right star-large"></div>
+      <div className="absolute bottom-6 left-1/2 star-decoration star-bottom-left star-medium"></div>
+
       <div className="container mx-auto px-4">
-        <div className="text-center mb-10">
-          <h2 className="font-merriweather font-bold text-3xl text-newspaper-black mb-2">
+        <div className="text-center mb-10 relative stripe-decoration stripe-horizontal">
+          <h2 className="font-merriweather font-bold text-3xl text-newspaper-dark-text mb-2">
             Последние новости
           </h2>
-          <div className="w-24 h-1 bg-newspaper-black mx-auto"></div>
+          <div className="w-24 h-1 bg-newspaper-dark-text mx-auto"></div>
         </div>
 
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
           {news.map((article, index) => (
-            <NewsCard key={index} {...article} />
+            <div
+              key={index}
+              className="relative star-decoration star-top-right star-small"
+            >
+              <NewsCard {...article} />
+            </div>
           ))}
         </div>
       </div>

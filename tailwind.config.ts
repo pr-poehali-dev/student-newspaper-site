@@ -35,6 +35,12 @@ export default {
           "medium-gray": "#666666",
           "light-gray": "#F5F5F5",
           "border-gray": "#E5E5E5",
+          // Dark theme colors
+          "dark-bg": "#0F0F0F",
+          "dark-surface": "#1A1A1A",
+          "dark-border": "#2A2A2A",
+          "dark-text": "#E5E5E5",
+          "dark-text-muted": "#A0A0A0",
         },
         primary: {
           DEFAULT: "hsl(var(--primary))",

@@ -18,24 +18,24 @@ const NewsCard = ({
   readTime,
 }: NewsCardProps) => {
   return (
-    <article className="bg-newspaper-white border border-newspaper-border-gray hover:shadow-lg transition-shadow duration-200">
-      <div className="relative">
+    <article className="bg-newspaper-dark-bg dark-newspaper border border-newspaper-dark-border rounded-sm overflow-hidden hover:shadow-lg transition-shadow relative stripe-decoration stripe-left">
+      <div className="relative star-decoration star-top-left star-small">
         <img src={imageUrl} alt={title} className="w-full h-48 object-cover" />
-        <div className="absolute top-3 left-3">
-          <span className="bg-newspaper-black text-newspaper-white px-2 py-1 text-xs font-open-sans font-semibold uppercase tracking-wide">
+        <div className="absolute top-2 left-2">
+          <span className="bg-newspaper-dark-text text-newspaper-dark-bg px-2 py-1 text-xs font-open-sans font-semibold uppercase tracking-wide">
             {category}
           </span>
         </div>
       </div>
 
-      <div className="p-6">
-        <h3 className="font-merriweather font-bold text-xl text-newspaper-black leading-tight mb-3 hover:text-newspaper-medium-gray transition-colors cursor-pointer">
+      <div className="p-6 relative star-decoration star-bottom-right star-small">
+        <h3 className="font-merriweather font-bold text-xl text-newspaper-dark-text leading-tight mb-3 relative stripe-decoration stripe-horizontal">
           {title}
         </h3>
-        <p className="font-open-sans text-newspaper-medium-gray text-sm leading-relaxed mb-4">
+        <p className="font-open-sans text-newspaper-dark-text-muted text-sm leading-relaxed mb-4">
           {excerpt}
         </p>
-        <div className="flex items-center justify-between text-xs font-open-sans text-newspaper-medium-gray">
+        <div className="flex items-center justify-between text-xs font-open-sans text-newspaper-dark-text-muted">
           <div className="flex items-center space-x-2">
             <span>{author}</span>
             <span>•</span>

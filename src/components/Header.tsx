@@ -2,11 +2,15 @@ import { Search, Menu } from "lucide-react";
 
 const Header = () => {
   return (
-    <header className="bg-newspaper-white border-b-2 border-newspaper-black">
+    <header className="bg-newspaper-dark-bg dark-newspaper border-b-2 border-newspaper-dark-border dark-newspaper-border relative">
+      {/* Decorative stars */}
+      <div className="absolute top-2 left-4 star-decoration star-top-left star-medium"></div>
+      <div className="absolute top-2 right-4 star-decoration star-top-right star-medium"></div>
+
       {/* Top bar */}
-      <div className="bg-newspaper-black text-newspaper-white py-2">
+      <div className="bg-newspaper-dark-surface text-newspaper-dark-text py-2 relative stripe-decoration stripe-horizontal">
         <div className="container mx-auto px-4 flex justify-between items-center text-sm">
-          <div className="flex items-center space-x-4">
+          <div className="flex items-center space-x-4 relative star-decoration star-bottom-left star-small">
             <span>
               Сегодня:{" "}
               {new Date().toLocaleDateString("ru-RU", {
@@ -17,7 +21,7 @@ const Header = () => {
               })}
             </span>
           </div>
-          <div className="flex items-center space-x-4">
+          <div className="flex items-center space-x-4 relative star-decoration star-bottom-right star-small">
             <span>Выпуск №47</span>
             <Search className="h-4 w-4 cursor-pointer hover:opacity-70" />
           </div>
@@ -25,65 +29,65 @@ const Header = () => {
       </div>
 
       {/* Main header */}
-      <div className="container mx-auto px-4 py-6">
-        <div className="text-center">
-          <h1 className="font-merriweather font-black text-5xl md:text-6xl text-newspaper-black tracking-tight">
+      <div className="container mx-auto px-4 py-6 relative">
+        <div className="text-center relative star-decoration star-top-left star-large">
+          <h1 className="font-merriweather font-black text-5xl md:text-6xl text-newspaper-dark-text tracking-tight relative stripe-decoration stripe-left">
             СТУДЕНЧЕСКИЙ
           </h1>
-          <h2 className="font-merriweather font-black text-4xl md:text-5xl text-newspaper-black mt-1">
+          <h2 className="font-merriweather font-black text-4xl md:text-5xl text-newspaper-dark-text mt-1 relative stripe-decoration stripe-right">
             МЕРИДИАН
           </h2>
-          <p className="font-open-sans text-newspaper-medium-gray mt-2 text-sm uppercase tracking-wider">
+          <p className="font-open-sans text-newspaper-dark-text-muted mt-2 text-sm uppercase tracking-wider">
             Голос студенческого сообщества
           </p>
         </div>
       </div>
 
       {/* Navigation */}
-      <nav className="bg-newspaper-light-gray border-t border-newspaper-border-gray">
+      <nav className="bg-newspaper-dark-surface border-t border-newspaper-dark-border relative">
         <div className="container mx-auto px-4">
           <div className="flex items-center justify-between">
-            <div className="hidden md:flex space-x-8 py-3">
+            <div className="hidden md:flex space-x-8 py-3 relative star-decoration star-bottom-left star-small">
               <a
                 href="#"
-                className="font-open-sans font-semibold text-newspaper-black hover:text-newspaper-medium-gray transition-colors text-sm uppercase tracking-wide"
+                className="font-open-sans font-semibold text-newspaper-dark-text hover:text-newspaper-dark-text-muted transition-colors text-sm uppercase tracking-wide"
               >
                 Главная
               </a>
               <a
                 href="#"
-                className="font-open-sans font-semibold text-newspaper-black hover:text-newspaper-medium-gray transition-colors text-sm uppercase tracking-wide"
+                className="font-open-sans font-semibold text-newspaper-dark-text hover:text-newspaper-dark-text-muted transition-colors text-sm uppercase tracking-wide"
               >
                 Новости
               </a>
               <a
                 href="#"
-                className="font-open-sans font-semibold text-newspaper-black hover:text-newspaper-medium-gray transition-colors text-sm uppercase tracking-wide"
+                className="font-open-sans font-semibold text-newspaper-dark-text hover:text-newspaper-dark-text-muted transition-colors text-sm uppercase tracking-wide"
               >
                 Студжизнь
               </a>
               <a
                 href="#"
-                className="font-open-sans font-semibold text-newspaper-black hover:text-newspaper-medium-gray transition-colors text-sm uppercase tracking-wide"
+                className="font-open-sans font-semibold text-newspaper-dark-text hover:text-newspaper-dark-text-muted transition-colors text-sm uppercase tracking-wide"
               >
                 Спорт
               </a>
               <a
                 href="#"
-                className="font-open-sans font-semibold text-newspaper-black hover:text-newspaper-medium-gray transition-colors text-sm uppercase tracking-wide"
+                className="font-open-sans font-semibold text-newspaper-dark-text hover:text-newspaper-dark-text-muted transition-colors text-sm uppercase tracking-wide"
               >
                 Культура
               </a>
               <a
                 href="#"
-                className="font-open-sans font-semibold text-newspaper-black hover:text-newspaper-medium-gray transition-colors text-sm uppercase tracking-wide"
+                className="font-open-sans font-semibold text-newspaper-dark-text hover:text-newspaper-dark-text-muted transition-colors text-sm uppercase tracking-wide"
               >
                 Мнения
               </a>
             </div>
 
-            <div className="md:hidden py-3">
-              <Menu className="h-6 w-6 text-newspaper-black cursor-pointer" />
+            <div className="md:hidden py-3 relative star-decoration star-bottom-right star-small">
+              <Menu className="h-6 w-6 text-newspaper-dark-text cursor-pointer" />
             </div>
           </div>
         </div>
