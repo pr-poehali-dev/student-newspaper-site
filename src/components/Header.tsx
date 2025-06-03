@@ -36,7 +36,7 @@ const Header = () => {
             <img
               src="https://cdn.poehali.dev/files/eb86911c-4399-4bea-a146-7e2d107b4694.svg"
               alt="Логотип Студенческий Меридиан"
-              className="w-12 h-12 md:w-16 md:h-16 opacity-90 filter brightness-0 invert"
+              className="w-20 h-20 md:w-24 md:h-24 opacity-90 filter brightness-0 invert"
             />
 
             {/* Title */}
@@ -53,7 +53,7 @@ const Header = () => {
             <img
               src="https://cdn.poehali.dev/files/eb86911c-4399-4bea-a146-7e2d107b4694.svg"
               alt="Логотип Студенческий Меридиан"
-              className="w-12 h-12 md:w-16 md:h-16 opacity-90 filter brightness-0 invert"
+              className="w-20 h-20 md:w-24 md:h-24 opacity-90 filter brightness-0 invert"
             />
           </div>
 
