@@ -73,7 +73,7 @@
     content: "✦";
     position: absolute;
     color: #000000;
-    font-size: 12px;
+    font-size: 24px;
     opacity: 0.3;
     pointer-events: none;
   }
@@ -84,35 +84,35 @@
   }
 
   .star-top-left::before {
-    top: -8px;
-    left: -8px;
+    top: -16px;
+    left: -16px;
   }
 
   .star-top-right::before {
-    top: -8px;
-    right: -8px;
+    top: -16px;
+    right: -16px;
   }
 
   .star-bottom-left::before {
-    bottom: -8px;
-    left: -8px;
+    bottom: -16px;
+    left: -16px;
   }
 
   .star-bottom-right::before {
-    bottom: -8px;
-    right: -8px;
+    bottom: -16px;
+    right: -16px;
   }
 
   .star-large::before {
-    font-size: 16px;
+    font-size: 32px;
   }
 
   .star-medium::before {
-    font-size: 14px;
+    font-size: 28px;
   }
 
   .star-small::before {
-    font-size: 10px;
+    font-size: 20px;
   }
 }
 
