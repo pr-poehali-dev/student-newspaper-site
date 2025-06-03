@@ -3,14 +3,14 @@ import NewsCard from "./NewsCard";
 const NewsGrid = () => {
   const news = [
     {
-      title: "Студенты факультета IT заняли первое место на хакатоне",
+      title: "Конкурс красоты и таланта 'Ярославна НовГУ'",
       excerpt:
-        "Команда 'Code Warriors' представила инновационное решение для оптимизации учебного процесса",
-      author: "Михаил Иванов",
-      date: "14 ноября",
-      category: "Технологии",
+        "12 студенток соревновались в четырёх номинациях: дефиле, творческая визитка, импровизация и танец. Победителем стала Валерия Крапивина с Педагогического института",
+      author: "Анна Морозова",
+      date: "15 ноября",
+      category: "Культура",
       imageUrl:
-        "https://images.unsplash.com/photo-1517077304055-6e89abbf09b0?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+        "https://cdn.poehali.dev/files/ff530b22-b7e8-461d-9a2b-f33803c0eef6.png",
       readTime: "3 мин",
     },
     {
